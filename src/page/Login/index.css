@@ -1,0 +1,131 @@
+@import "tailwindcss";
+@layer components {
+    .login-container-top {
+        @apply  rounded-3xl flex flex-col justify-center items-center h-full w-full ;
+        background-color: var(--dark-mode-foreground,#000);
+        box-shadow: -15px -10px 0 var(--dark-mode-rearview,#fff);
+        transition: transform 0.5s,background-color 0.5s,box-shadow 0.5s;
+    }
+    .login-container-end {
+        @apply  rounded-3xl flex flex-col justify-center items-stretch h-full w-full;
+        box-shadow: 15px 10px 0 var(--dark-mode-rearview,#fff);
+        background-color: var(--dark-mode-foreground,#000);
+        color:var(--dark-mode-rearview,#fff);
+        transition: transform 0.5s,background-color 0.5s,box-shadow 0.5s,color 0.5s;
+
+
+    }
+    .moveLoginBoxLeft{
+        transform: translateX(-50%);
+        transition: transform 0.5s;
+    }
+    .moveLoginBoxRight{
+        transform: translateX(50%);
+        transition: transform 0.5s,opacity 0.7s;
+    }
+    .gradient-text {
+        background: linear-gradient(to right, var(--dark-mode-rearview,#fff) ,#595959);/*±³¾°ÏßÐÔ¼õ°ë*/
+        -webkit-background-clip: text;/*²ÃÇÐ±³¾°*/
+        background-clip: text;
+        color: transparent;/*ÎÄ×ÖÍ¸Ã÷*/
+        transition: background 0.5s;
+    }
+
+    .btn {
+        width: 10.5em;
+        height: 2.3em;
+        margin: 0;
+        background: var(--dark-mode-rearview,#fff);
+        color: var(--dark-mode-foreground,#000);
+        border: none;
+        border-radius: 0.6em;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    .btn:hover {
+        color: var(--dark-mode-rearview,#fff);
+    }
+
+    .btn:after {
+        content: "";
+        background: var(--dark-mode-foreground,#000);
+        position: absolute;
+        z-index: -1;
+        left: -20%;
+        right: -20%;
+        top: 0;
+        bottom: 0;
+        transform: skewX(-45deg) scale(0, 1);
+        transition: all 0.5s;
+    }
+
+    .btn:hover:after {
+        transform: skewX(-45deg) scale(1, 1);
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .btn2{
+        width: 10.5em;
+        height: 2.3em;
+        margin: 0;
+        background: var(--dark-mode-foreground,#000);
+        color: var(--dark-mode-rearview,#fff);
+        border: none;
+        border-radius: 0.6em;
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.5s, background 0.5s, color 0.5s;
+        cursor: default;
+    }
+
+    .inputBox{
+        @apply w-full mt-4 self-center border-gray-400 border-1 rounded-md text-sm placeholder-gray-500;
+        background-color: var(--dark-mode-rearview,#fff);
+        transition: background-color 0.5s;
+        text-indent: 10px;
+    }
+    .inputBoxLabel{
+        @apply text-sm tracking-normal;
+        color: var(--dark-mode-rearview,#fff);
+        transition: color 0.5s;
+    }
+    .loginSVG{
+        transform: translate(-10000px);
+        filter: drop-shadow(10000px 0px var(--dark-mode-rearview,#fff));
+        transition: opacity 0.5s 0.2s;
+    }
+
+    .sLineIn{
+        opacity: 1;
+        transition: opacity 1.5s;
+    }
+    .sLineOut{
+        opacity: 0;
+        transition: opacity 1.5s;
+    }
+}
+.aspect-2-3 {
+    aspect-ratio: 2 / 3;
+}
+.aspect-10-3 {
+    aspect-ratio: 24 / 3;
+}
+.aspect-1-1 {
+    aspect-ratio: 1 / 1;
+}
+.aspect-6-5 {
+    aspect-ratio: 6 / 5;
+}
+.aspect-12-5 {
+    aspect-ratio: 12 / 5;
+}

@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@layer components {
+    .SwitchSunMoon{
+        filter: invert(100%);
+        transition: filter 0.5s;
+    }
+    .SwitchSunMoonLight{
+        filter: invert(0%);
+        transition: filter 0.5s;
+    }
+    .SwitchMS{
+        opacity: 0;
+        animation: SwitchMSAn 1s forwards;
+    }
+    .SwitchSS{
+        opacity: 1;
+        animation: SwitchMSOut 1s forwards;
+    }
+    @keyframes SwitchMSAn {
+        from{
+            opacity: 0;
+            transform: rotate(0deg);
+        }
+        to{
+            opacity: 1;
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes SwitchMSOut {
+        from{
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+        to{
+            opacity: 0;
+            transform: rotate(360deg);
+        }
+    }
+}

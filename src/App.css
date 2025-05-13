@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@layer components {
+    .borderColorDiv {
+        border-color: var(--dark-mode-rearview-3,#353535);
+        transition: border-color 0.5s;
+    }
+}

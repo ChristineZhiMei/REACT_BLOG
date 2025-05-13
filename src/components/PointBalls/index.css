@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.container line {
+    fill: none;
+    stroke: #ea9b9b;
+    stroke-width: 2;
+}
