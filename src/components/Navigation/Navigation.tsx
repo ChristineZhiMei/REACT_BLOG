@@ -41,7 +41,7 @@ const Navigation:FC = () => {
                             <NavigationMenuLink className={`${navigationMenuTriggerStyle()} cursor-pointer`}>
                                 <span className={`font-semibold`}>BIOGRAPHY</span>
                             </NavigationMenuLink>
-                            <NavigationMenuLink className={`${navigationMenuTriggerStyle()} cursor-pointer`}>
+                            <NavigationMenuLink target={`_blank`} href={'https://github.com/ChristineZhiMei'} className={`${navigationMenuTriggerStyle()} cursor-pointer`}>
                                 <span className={`font-semibold`}>GITHUB</span>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
