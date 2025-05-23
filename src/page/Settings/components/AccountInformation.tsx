@@ -49,7 +49,7 @@ const AccountInformation = () => {
             const selectedFile = files[0];
             const url = URL.createObjectURL(selectedFile);
             setSelectedImageUrl(url);
-            console.log('选中的文件:', url);
+            // console.log('选中的文件:', url);
         }
     };
 

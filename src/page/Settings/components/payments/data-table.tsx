@@ -172,7 +172,7 @@ export function DataTable({
                     user_info_id: userID ?? -1,
                     access_list_id:id
                 })
-            }).then((res)=>console.log(res));
+            })
             sonnerToast.success(
                 <div className={`select-none`}>
                     <p>成功删除{rows_id.length}个条目</p>

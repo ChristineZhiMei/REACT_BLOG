@@ -94,7 +94,7 @@ const EditList: FC<EditListProps> = ({ rows }) => {
                 user_info_id: switchMS?.userList.id ?? -1,
                 access_list_id:[id,]
             })
-        }).then((res)=>console.log(res));
+        })
     }
     return (
         <DropdownMenu>
@@ -197,7 +197,7 @@ const EditList: FC<EditListProps> = ({ rows }) => {
                             onClick={()=>{
                                 if(rows) {
                                     const rowId = Number(rows.original.id);
-                                    console.log(typeof rows.original.id)
+                                    // console.log(typeof rows.original.id)
                                     deleteSubmit(rows.id,rowId)
                                 }
                             }}

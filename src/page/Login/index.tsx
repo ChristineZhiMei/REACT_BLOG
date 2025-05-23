@@ -115,6 +115,10 @@ const Login:FC = () => {
                 </div>
             </div>
             <Toaster />
+            <div className={`absolute bottom-0 text-gray-500 text-[0.7rem] pb-6`}>
+                <p className={`text-center`}>Copyright © 2025 G_Christine All rights reserved.</p>
+                <p className={`text-center`}><a href="https://beian.miit.gov.cn" target={'_blank'}>冀 ICP 备 2025115205号-1</a></p>
+            </div>
         </div>
     )
 }

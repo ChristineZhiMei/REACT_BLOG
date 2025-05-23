@@ -8,6 +8,7 @@ import QuickAccess from '@/page/Settings/components/payments/QuickAccess.tsx';
 import {API_URL} from "@/utils/apis.ts";
 
 async function checkAuth() {
+    // return redirect('/home');
     const token = localStorage.getItem('token');
     if (!token) return redirect('/login');
 

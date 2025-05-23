@@ -12,6 +12,7 @@ import {redirect} from "react-router-dom";
 //     accessList:Payment[];
 // }
 export const API_URL = 'http://8.152.200.162:20029'
+// export const API_URL = 'http://127.0.0.1:20029'
 export type User = {
     avatar:string;
     email: string;

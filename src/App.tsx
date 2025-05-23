@@ -147,7 +147,7 @@ const App: FC = () => {
     useEffect(() => {
         getUserInfo()
             .then(user => {
-                console.log(user);
+                // console.log(user);
                 if (user?.userInfo.accessList) setDataList(user?.userInfo.accessList)
                 if (user){
                     setUserList({
@@ -160,7 +160,6 @@ const App: FC = () => {
                         introduction: user?.userInfo.introduction
                     });
                 }
-                console.log(user?.userInfo)
             })
             .catch(() => {
                 setDataList(accessListDe)
